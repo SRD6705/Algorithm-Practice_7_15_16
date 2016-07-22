@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	how many strings are in the arr array? 
+	<div id="answer"></div>
+
+
+	<script>
+	var count = 0;
+	//count should be six after we use the for loop to count how many strings are in the array
+	//hint: typeof(------)
+ 
+	var arr = ["hello", "There", 3, ["one", 2], 5, "another", "string", "solve", 6 , "me"];
+debugger;
+		for(var i = 0; i < arr.length; i++) {
+			if (typeof(arr[i]) == "string"){
+				count = count + 1;
+			}
+
+
+
+		}
+
+
+
+
+	document.getElementById('answer').innerHTML = count;
+
+
+
+
+	</script>
+</body>
+</html>

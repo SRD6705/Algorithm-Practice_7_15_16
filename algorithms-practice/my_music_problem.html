@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Music Problem</title>
+	<style>
+		#list_space{
+			width: 800px;
+			height: auto;
+			border: 15px solid black;
+			border-radius: 10px;
+			margin: 0 auto 0 auto;
+			text-align: center;
+
+
+		}
+
+
+#music_list{
+	color:blue;
+}
+
+
+
+
+
+	</style>	
+</head>
+<body>
+
+<div id="list_space">
+
+	<h1>My Music!</h1><br>
+	<div id= "music_list"> 
+ 
+		please choose genre!
+
+
+	</div>
+
+	<input type="text" id= "album">
+
+
+
+	<button onclick="find_album()">submit</button>
+
+</div><br>
+
+
+
+
+
+
+<script>
+
+var music_data = [
+{	Gnere: "Hip Hop", 
+	Artist: "Aesop Rock", 
+	Album: "Labor Days", 
+	Album_Image: ""
+}, 
+{	Gnere: "Hip Hop", 
+	Artist: "Prefuse 73", 
+	Album: "One Word Extinguisher", 
+	Album_Image: ""
+},
+
+{	Genre: "Indy Rock", 
+	Arist: "Built To Spill", 
+	Album: "Keep It Like A Secret", 
+	Album_Image: ""
+}, 
+{	Gnere: "Indy Rock", 
+	Artist: "Modest Mouse", 
+	Album: "Building Nothing Out of Something", 
+	Album_Image: ""
+},
+{	Gnere: "Indy Rock", 
+	Artist: "Sleater Kinney", 
+	Album: "One Beat", 
+	Album_Image: ""
+},
+{	Genre: "Electronica", 
+	Artist: "Boards of Canada", 
+	Album: "Children Have The Right To Music",
+	Album_Image: ""
+} 
+				]; //ending music_list array bracket
+
+var music_list = document.getElementById("music_list");
+
+var user_input = document.getElementById("album").value;
+  
+// Provide list to user.
+// User is presented with list of genres. User chooses which genre. User is presented with bands within chosen genre. User chooses band. User is preseneted with album from chosen band.
+
+// List out just one section 
+// Instructions for the user
+// show them their sellection
+
+// first user enters genre (
+// we need to give list to user: List out Genre
+// provide 3-2-1 artists per genre)
+function find_album(input){
+
+
+
+
+}
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Question_1</title>
+</head>
+<body>
+<!-- 1. Write a function which takes an array of numbers and returns the mode of that array.
+[2, 4, 4, 4, 6, 6, 1] - > 4
+[0, 0, 0, 10] -> 0
+[1] -> 1
+ -->
+
+<!-- mode refers to a number which appears most often in a set of numbers -->
+<!-- when searching array of numbers, find the number that appears most often and return that number -->
+<!-- Find the mode of an array of numbers -->
+<!-- function findMore(arr){
+	var counts = {};
+	var i;
+
+for(var i = 0; i < arr.length; i++){
+	var current = aar[i];
+	if (counts [current ]=== undefined){
+	counts[current] = 1;
+
+	}else{
+		counts[current]++;
+			
+	}
+}
+	var maxcount = -infinity;
+	var maxindex = 0;
+	for(i = 0;  < count.length; i++){  (can also use: e stands for each key of an object
+		if(counts[i] > maccount){
+			maxcount = counts[i]; (or maxcount = counts[e])
+			maxindex = i; (or maxindex = e)
+		}
+
+}
+	return parseFloat(maxindex);
+	look at each element of an array
+	incremnet the count of whatever the element is
+
+
+
+
+} -->
+
+
+
+
+
+
+
+
+<script>
+var arr1 = [2, 4, 4, 4, 6, 6, 1];
+
+// function myFunction(arr){
+// 	// var i;
+// 	var j;
+// 	var count = []; // to keep track of how many times a number appears.
+// 	var maxcount = 1; // this represents the amount of times the number is in the array
+// 	var maxnum = arr[0]; //this represents the actual number in the array starting at 0 
+//  debugger;
+// 	for(var i = 0; i < arr.length; i++){
+// 		if (count[arr[i]] === 0){
+// 		count[arr[i]] = 0;
+// 		// if count arr at index [i] is absolute 0
+// 	}
+// 	count[arr[i]] = count[arr[i]] + 1;
+
+// }
+// 	for(j = 0; j < count.length; j++){
+// 		if (count[j] > maxcount){
+// 		maxcount = count[j];
+// 		maxnum = j;
+// 		}
+// 	}
+// 	return maxnum;
+
+// }
+
+// console.log(myFunction(arr1));
+
+
+
+
+
+
+function mode(arr) {
+	"use strict";
+	var counts = [];
+	var i, j;
+	var maxcount = 1;
+	var maxnum = arr[0];
+	//count the numbers in arr, into counts
+	for (i = 0; i < arr.length; i++) {
+		if (counts[arr[i]] === undefined) {
+			counts[arr[i]] = 0;
+		}
+		counts[arr[i]] = counts[arr[i]] + 1; 
+	}
+	
+	//find the max number in the counts array
+	for (j = 0; j < counts.length; j++) {
+		if (counts[j] > maxcount) {
+			maxcount = counts[j];
+			maxnum = j;
+		}
+	}
+	return maxnum;
+}
+
+console.log(mode([2, 4, 4, 4, 6, 6, 1]) == 4);
+console.log(mode([0, 0, 0, 10]) == 0);
+console.log(mode([1]) == 1);
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

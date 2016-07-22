@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Question_2</title>
+</head>
+<body>
+<div id="the_year"></div>
+
+<script>
+
+// 2. Write a funciton which, given a year as a number, returns whether that number is a leap year.
+
+// 2000 -> true
+// 1900 -> false
+// 2016 -> true 
+
+// if year is not % 4 then it is a common year. 
+// Else if year is not % 100 then it is a leap year
+// Else if year is not % by 400 it is a common year
+// Else it is a leap year
+// var year =prompt("Check if leap year: ");
+function findLeapYear(){
+var year = 2016
+// tried these variables, then simplified to one variable. 
+// var a = common_year
+// var b = leap_year
+// var c = year_as_a_numbers
+// var d = "false"
+// var e = "true"
+
+if((year % 4 ==0) && (year % 100 != 0) || (year % 400 == 0)){
+		return year+" true";  
+}
+		else{
+			return year+" false";  
+}
+	}
+
+document.getElementById('the_year').innerHTML = findLeapYear(2016);
+
+
+
+
+
+</script>
+
+<button onclick="findLeapYear()">Check</button>
+</body>
+</html>
